@@ -1,0 +1,48 @@
+$bg-color: #272727;
+$hc: burlywood;
+$main-color: #fff;
+
+.container__header {
+    background-color: $bg-color;
+    width: 100vw;
+    height: 120px;
+    margin-bottom: 80px;
+}
+
+.header__logo {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.header__name {
+    padding-left: 10%;
+    padding-top: 48px;
+    font-size: 24px;
+    color: $hc;
+}
+
+.sitevizit {
+    position: absolute;
+    right: 5%;
+    top: 54px;
+    color: $main-color;
+}
+
+.sitelink {
+    color: $main-color;
+    text-decoration: none;
+    font-size: 18px;
+
+    &:hover {
+        color: $hc;
+    }
+}
+
+.backtomain {
+    position: absolute;
+    color: $main-color;
+    right: 20%;
+    top: 54px;
+    font-size: 18px;
+}

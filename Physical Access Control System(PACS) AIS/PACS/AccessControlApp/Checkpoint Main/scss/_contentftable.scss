@@ -1,0 +1,107 @@
+$main-text: 'PT Sans', sans-serif;
+
+body {
+    overflow-x: hidden;
+}
+
+.tablewrap {
+    width: 860px;
+    margin: 0 auto;
+    background-color: #E6E6FA;
+    border: 3px solid burlywood;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-bottom: 80px;
+    font-family: $main-text;
+    font-size: 18px;
+}
+
+.tablestyle {
+    display: flex;
+    justify-content: center;
+}
+
+.thstyle {
+    padding: 0px 50px 17px 50px;
+    
+}
+
+.tdstyle {
+    text-align: center;
+    padding-top: 10px;
+    border: 3px solid burlywood;
+    background-color: #e7e7e7;
+    &:nth-child(2) {
+        background-color: #d5d5d5;
+        cursor: pointer;
+        font-weight: normal;
+    }
+    // &:nth-child(4) {
+    //     background-color: #E6E6FA;
+    // } 
+    &.tableicon {
+        background-image: url(../images/skud.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 3px solid burlywood;
+        background-color: #d5d5d5;
+        padding: 0px 50px 37px 50px;
+        cursor: pointer;
+    }
+}
+
+
+//Модальное окно
+
+.modal {
+    display: none;
+    position: relative;
+    background: #D9D9D9;
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 9;
+    font-family: $main-text;
+    color: #272727;
+    cursor: default;
+}
+.modal_vis {
+    display: block;
+}
+
+.body_block {
+    overflow: hidden;
+}
+
+#close_modal {    
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    color: #272727;
+    top: 120px;
+    right: 22%;
+    cursor: pointer;
+    transition: all 0.5s;
+    box-sizing: content-box;
+}
+
+#close_modal:hover {
+    transform: scale(1.05);
+    color: #9370DB;
+    border: 2px solid #272727;
+    border-radius: 30%;
+    padding: 5px;
+}
+
+.modal_txt {
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2), 0 26px 52px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background: #F5F5F5;
+    padding: 30px;
+    margin: 120px auto;
+    max-width: 800px;
+}

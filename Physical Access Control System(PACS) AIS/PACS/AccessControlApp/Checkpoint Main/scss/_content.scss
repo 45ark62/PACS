@@ -1,0 +1,53 @@
+$bg-color: #272727;
+$hc: burlywood;
+$main-color: #fff;
+
+body {
+    overflow-x: hidden;
+}
+
+.container__grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 850px;
+    margin: 0 auto;
+    gap: 50px;
+    margin-bottom: 170px;
+        &-main {
+            display: grid;
+            grid-template-columns: 1fr;
+            width: 400px;
+            height: 400px;
+            background: url(../images/iconsystem.png);
+            background-size: 200%;
+            background-repeat: no-repeat;
+            background-position: center;
+            // &::after {
+            //     content: "";
+            // }
+            &:hover {
+                transform: scale(1.05);
+                opacity: 0.85;
+                transition: 0.5s ease-in;
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+
+            }
+        }
+}
+
+.textinside {
+    font-size: 24px;
+    color: $bg-color;
+    opacity: 1;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.textlink {
+    text-decoration: none;
+    color: $main-color;
+    &:hover {
+        color: $hc;
+    }
+}
+
